@@ -1,0 +1,361 @@
+/**
+* @name JavieriloxUI Custom
+* @author NEBULYS
+* @authorLink https://github.com/GoldenLys
+* @version 1.93
+* @invite SBuYeHh
+* @description An amazing modular and fully customizable theme, made with 💖 by NEBULYS.
+* @website https://nebulys.eu/themegen
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@import url("https://goldenlys.github.io/WizardUI/base.css");
+
+@import url("https://goldenlys.github.io/WizardUI/addons/PurpleServerList.css"); 
+@import url("https://goldenlys.github.io/WizardUI/addons/LettersInPSL.css"); 
+@import url("https://goldenlys.github.io/WizardUI/addons/AlternateFoldersInPSL.css"); 
+@import url("https://goldenlys.github.io/WizardUI/addons/HoverMembers.css"); 
+@import url("https://goldenlys.github.io/WizardUI/addons/UserIsTyping.css"); 
+@import url("https://goldenlys.github.io/WizardUI/addons/EvenMoreColors/2.css"); 
+
+:root {
+    /* GENERAL */
+    --Watermark: "JavieriloxUI Custom Edition";
+    --font: "Quicksand", "emoji", sans-serif;
+    --logo: url("https://goldenlys.github.io/WizardUI/images/logos/1.gif");
+    --sendmessage-text-lines: 8;
+
+    /* COLORS */
+    --Primary: #028df7;
+    --Text: #ffffff;
+    --text-link: var(--Primary);
+    --text-shadow: #000000;
+    --Highlighted:  #028df780;
+    --MessageHover: #0000000d;
+    --Unread: #005cb3;
+
+    /* STATUS */
+    --Online: #00ff06;
+    --Idle: #1264ef;
+    --Unavailable: #e40f00;
+    --Offline: #5a5f64;
+    --Streaming: #6e00c4;
+
+    /* UI */
+    --grey: #12131f;
+    --grey5: #12131fbf;
+    --darkgrey: #0a0a14;
+    --darkgrey5: #0a0a14bf;
+    --ui-success: #45d022;
+    --ui-warning: #eea51e;
+    --ui-error: #d02222;
+    --Hover: #12131f80;
+
+    /* BACKGROUNDS */
+    --bg-titlebar: #00000080;
+    --bg-servers: #000000a6;
+    --bg-ui: #000000a6;
+    --bg-ui-elements: #12131fa6;
+    --bg-chatbox: #00bb8c00;
+    --bg-sendmessage: #016dfa00;
+    --bg-members: #000000a6;
+    --bg-chat-elements: #12131f80;
+    --bg-user-area: #000000a6;
+    --bg-settings: #057eb6ce;
+    --bg-colorprofile: #00000080;
+    --bg-alt-message: #02c05100;
+    /*--background: url("https://i.redd.it/x2pc0n0xz58g1.jpeg");*/
+
+    /* RGB */
+    --ColorTime: 5s;
+    --Color2: #ff0000;
+    --Color3: #ff7f00;
+    --Color4: #ffff00;
+    --Color5: #00ff00;
+    --Color6: #0000ff;
+    --Color7: #4b0082;
+    --Color8: #8f00ff;
+    --Color9: #00ffff;
+    --Color10: #ff1493;
+
+    /* EMB */
+    --BackgroundTime: 540s;
+    --EMB_1: url("https://i.redd.it/x2pc0n0xz58g1.jpeg");
+    --EMB_2: url("https://i.pinimg.com/736x/6c/f2/5f/6cf25f2ae547aa58428fc32a99429c4c.jpg");
+    --EMB_3: url("https://i.pinimg.com/736x/a3/ad/32/a3ad32fbbc14d6e597c3f294ec1220cc.jpg");
+    --EMB_4: url("https://i.pinimg.com/736x/fb/97/6c/fb976c6b33b1e486dec14e991757103e.jpg");
+    --EMB_5: url("https://i.pinimg.com/736x/0b/88/40/0b8840f4f052cd6b24e7a747faebb385.jpg");
+    --EMB_6: url("https://i.pinimg.com/736x/88/6c/d6/886cd6b8f2dee756764683a3d9ed8138.jpg");
+    --EMB_7: url("https://i.pinimg.com/736x/47/fd/a4/47fda4e24ef1a13e452b5939ddc799ba.jpg");
+    --EMB_8: url("https://i.pinimg.com/736x/ed/94/0e/ed940ea3acaa93ee527e7fac83b872be.jpg");
+    --EMB_9: url("https://i.pinimg.com/1200x/c3/b2/2c/c3b22cfc4ce3fd8d567d5a7b36205953.jpg");
+
+    /* EMB HD: intenta cargar la versión original de Pinterest y deja la 736x como respaldo. */
+    --EMB_1_HD: var(--EMB_1);
+    --EMB_2_HD: url("https://i.pinimg.com/originals/6c/f2/5f/6cf25f2ae547aa58428fc32a99429c4c.jpg");
+    --EMB_3_HD: url("https://i.pinimg.com/originals/a3/ad/32/a3ad32fbbc14d6e597c3f294ec1220cc.jpg");
+    --EMB_4_HD: url("https://i.pinimg.com/originals/fb/97/6c/fb976c6b33b1e486dec14e991757103e.jpg");
+    --EMB_5_HD: url("https://i.pinimg.com/originals/0b/88/40/0b8840f4f052cd6b24e7a747faebb385.jpg");
+    --EMB_6_HD: url("https://i.pinimg.com/originals/88/6c/d6/886cd6b8f2dee756764683a3d9ed8138.jpg");
+    --EMB_7_HD: url("https://i.pinimg.com/originals/47/fd/a4/47fda4e24ef1a13e452b5939ddc799ba.jpg");
+    --EMB_8_HD: url("https://i.pinimg.com/originals/ed/94/0e/ed940ea3acaa93ee527e7fac83b872be.jpg");
+    --EMB_9_HD: url("https://i.pinimg.com/originals/c3/b2/2c/c3b22cfc4ce3fd8d567d5a7b36205953.jpg");
+
+    /* MISCS */
+    --ServerSize: 45px;
+    --ServerPills: var(--Primary);
+    --ServerFoldersColor: var(--Primary);
+    --Rounding: 5px;
+    --AvatarRounding: 5px;
+    --Show_Gift_Button: none;
+    --Show_GIF_Button: none;
+    --Show_Sticker_Button: none;
+    --Show_Apps_Button: flex;
+    --Show_Now_Playing_Tab: flex;
+    --Show_Category_Visibility_Icon: flex;
+    --Show_Current_Channel_Title: flex;
+}
+
+
+/* Theme generated using WizardUI Theme Generator v1.0 */
+
+/* ==========================================================
+   JAVIERILOXUI - ROTACIÓN EMB INTEGRADA
+   ----------------------------------------------------------
+   Este bloque reemplaza el import externo:
+   https://goldenlys.github.io/WizardUI/addons/EvenMoreBackgrounds/3.css
+
+   Usa las 9 variables --EMB_1 a --EMB_9 ya configuradas en :root.
+   Las variables --EMB_X_HD intentan cargar la versión original de Pinterest;
+   si alguna no existe, el navegador mantiene la imagen EMB normal como respaldo.
+   ========================================================== */
+
+/* Base transparente para que el fondo integrado se vea detrás de la UI. */
+html,
+body,
+#app-mount {
+    min-height: 100%;
+    background: transparent !important;
+}
+
+body {
+    background-color: #000000 !important;
+    overflow: hidden;
+}
+
+/* Capa fija de fondo. Queda detrás de Discord y no bloquea clics. */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+
+    /* Imagen inicial mientras comienza la rotación. */
+    background-image: var(--EMB_1_HD), var(--EMB_1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* Ajuste visual: mantiene nitidez sin dejar bordes vacíos. */
+    image-rendering: auto;
+    filter: saturate(1.05) brightness(0.9);
+
+    /* Rotación interna de las 9 imágenes EMB. */
+    animation: JavUI-EMB-Rotation var(--BackgroundTime) infinite step-end;
+}
+
+/* Mantiene la interfaz por encima del fondo integrado. */
+#app-mount {
+    position: relative;
+    z-index: 1;
+    /* Capa semi-transparente entre el fondo integrado y la interfaz (20% de opacidad) */
+    background-color: rgba(0,0,0,0.40);
+}
+
+/* Precarga de imágenes para reducir parpadeos cuando cambia el fondo. */
+body::after {
+    content: "";
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    background-image:
+        var(--EMB_1_HD), var(--EMB_1),
+        var(--EMB_2_HD), var(--EMB_2),
+        var(--EMB_3_HD), var(--EMB_3),
+        var(--EMB_4_HD), var(--EMB_4),
+        var(--EMB_5_HD), var(--EMB_5),
+        var(--EMB_6_HD), var(--EMB_6),
+        var(--EMB_7_HD), var(--EMB_7),
+        var(--EMB_8_HD), var(--EMB_8),
+        var(--EMB_9_HD), var(--EMB_9);
+}
+
+@keyframes JavUI-EMB-Rotation {
+    0%, 11.10% {
+        background-image: var(--EMB_1_HD), var(--EMB_1);
+    }
+
+    11.11%, 22.21% {
+        background-image: var(--EMB_2_HD), var(--EMB_2);
+    }
+
+    22.22%, 33.32% {
+        background-image: var(--EMB_3_HD), var(--EMB_3);
+    }
+
+    33.33%, 44.43% {
+        background-image: var(--EMB_4_HD), var(--EMB_4);
+    }
+
+    44.44%, 55.54% {
+        background-image: var(--EMB_5_HD), var(--EMB_5);
+    }
+
+    55.55%, 66.65% {
+        background-image: var(--EMB_6_HD), var(--EMB_6);
+    }
+
+    66.66%, 77.76% {
+        background-image: var(--EMB_7_HD), var(--EMB_7);
+    }
+
+    77.77%, 88.87% {
+        background-image: var(--EMB_8_HD), var(--EMB_8);
+    }
+
+    88.88%, 100% {
+        background-image: var(--EMB_9_HD), var(--EMB_9);
+    }
+}
+
+@keyframes JavUI-Channel-Rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+/* Texto arcoíris para canales con mensajes nuevos */
+.channelName-2YrOjO, .name-3YKhmS, .nameText, .name-1habKH {
+    transition: color 0.3s ease;
+}
+
+.channel-2QD9_O.unread-2TeXvX .channelName-2YrOjO,
+.channel-2QD9_O.unread-2TeXvX .name-3YKhmS,
+.channel-2QD9_O.unread-2TeXvX .nameText,
+.channel-2QD9_O.unread-2TeXvX .name-1habKH,
+.channel-2QD9_O.unread-2TeXvX span {
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    animation: JavUI-Channel-Rainbow 5s linear infinite;
+}
+/* Texto arcoíris para canales con mensajes nuevos */
+.channelName-2YrOjO, .name-3YKhmS, .nameText, .name-1habKH {
+    transition: color 0.3s ease;
+}
+
+.channel-2QD9_O.unread-2TeXvX .channelName-2YrOjO,
+.channel-2QD9_O.unread-2TeXvX .name-3YKhmS,
+.channel-2QD9_O.unread-2TeXvX .nameText,
+.channel-2QD9_O.unread-2TeXvX .name-1habKH,
+.channel-2QD9_O.unread-2TeXvX span {
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    animation: JavUI-Channel-Rainbow 5s linear infinite;
+}
+/* ----------------------------------------------------------
+   Canal actual / seleccionado: celeste fijo.
+   Esto pisa cualquier arcoíris del addon de colores para que
+   el canal donde estás parado no cambie de color.
+   ---------------------------------------------------------- */
+[class*="sidebar"] [class*="modeSelected"] [class*="name"],
+[class*="sidebar"] [class*="modeSelected"] span,
+[class*="sidebar"] [aria-current="page"] [class*="name"],
+[class*="sidebar"] [aria-current="page"] span,
+[class*="channels"] [class*="modeSelected"] [class*="name"],
+[class*="channels"] [class*="modeSelected"] span,
+[class*="containerDefault"] [class*="modeSelected"] [class*="name"],
+[class*="containerDefault"] [class*="modeSelected"] span {
+    background: none !important;
+    background-image: none !important;
+    color: var(--JavUI-Channel-Selected) !important;
+    -webkit-text-fill-color: var(--JavUI-Channel-Selected) !important;
+    text-shadow: 0 0 8px var(--JavUI-Channel-Selected-Glow) !important;
+    animation: none !important;
+}
+
+/* ----------------------------------------------------------
+   Canales con mensajes nuevos: RGB arcoíris.
+   Se excluye el canal seleccionado para que no entre en conflicto
+   con el celeste fijo del canal actual.
+   ---------------------------------------------------------- */
+[class*="sidebar"] [class*="modeUnread"]:not([class*="modeSelected"]) [class*="name"],
+[class*="sidebar"] [class*="modeUnread"]:not([class*="modeSelected"]) span,
+[class*="channels"] [class*="modeUnread"]:not([class*="modeSelected"]) [class*="name"],
+[class*="channels"] [class*="modeUnread"]:not([class*="modeSelected"]) span,
+[class*="containerDefault"] [class*="modeUnread"]:not([class*="modeSelected"]) [class*="name"],
+[class*="containerDefault"] [class*="modeUnread"]:not([class*="modeSelected"]) span,
+.channel-2QD9_O.unread-2TeXvX:not(.selected-1-Z6gm) .channelName-2YrOjO,
+.channel-2QD9_O.unread-2TeXvX:not(.selected-1-Z6gm) .name-3YKhmS,
+.channel-2QD9_O.unread-2TeXvX:not(.selected-1-Z6gm) .nameText,
+.channel-2QD9_O.unread-2TeXvX:not(.selected-1-Z6gm) .name-1habKH,
+.channel-2QD9_O.unread-2TeXvX:not(.selected-1-Z6gm) span {
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0066ff,
+        #8f00ff,
+        #ff1493,
+        #ff0000
+    ) !important;
+    background-size: 300% 300% !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: none !important;
+    animation: JavUI-Channel-Unread-Rainbow var(--JavUI-Channel-Rainbow-Speed) linear infinite !important;
+}
+
+/* Indicador de no leído en celeste para combinar con el theme. */
+[class*="sidebar"] [class*="modeUnread"]:not([class*="modeSelected"]) [class*="unread"],
+[class*="channels"] [class*="modeUnread"]:not([class*="modeSelected"]) [class*="unread"],
+[class*="containerDefault"] [class*="modeUnread"]:not([class*="modeSelected"]) [class*="unread"] {
+    background-color: var(--JavUI-Channel-Selected) !important;
+    box-shadow: 0 0 8px var(--JavUI-Channel-Selected-Glow) !important;
+}
+/* Evita que un canal seleccionado con mensajes sin leer quede arcoíris.
+   La prioridad final siempre la tiene el celeste fijo. */
+[class*="sidebar"] [class*="modeSelected"][class*="modeUnread"] [class*="name"],
+[class*="sidebar"] [class*="modeSelected"][class*="modeUnread"] span,
+[class*="channels"] [class*="modeSelected"][class*="modeUnread"] [class*="name"],
+[class*="channels"] [class*="modeSelected"][class*="modeUnread"] span,
+[class*="containerDefault"] [class*="modeSelected"][class*="modeUnread"] [class*="name"],
+[class*="containerDefault"] [class*="modeSelected"][class*="modeUnread"] span {
+    background: none !important;
+    background-image: none !important;
+    color: var(--JavUI-Channel-Selected) !important;
+    -webkit-text-fill-color: var(--JavUI-Channel-Selected) !important;
+    text-shadow: 0 0 8px var(--JavUI-Channel-Selected-Glow) !important;
+    animation: none !important;
+}
