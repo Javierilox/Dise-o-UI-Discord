@@ -37,12 +37,12 @@
 
 ## 🎥 Vistas Previas
 
-> **Nota para el creador:** ¡Sube tus GIFs a Imgur, Giphy o directamente a GitHub y reemplaza estos enlaces para que tu README cobre vida!
+> **Nota del el creador:** ¡Sube tus GIFs a Imgur, Giphy y reemplaza los enlaces de las Imagenes del fondo
 
-| 🌈 Canales RGB | 🔄 Rotación de Fondos |
-| :---: | :---: |
-| <img src="URL_DE_TU_GIF_RGB_AQUI" width="350" alt="Demostración RGB"> | <img src="URL_DE_TU_GIF_FONDOS_AQUI" width="350" alt="Demostración Fondos"> |
-| *Mira cómo brillan los mensajes no leídos.* | *Transiciones suaves entre 9 fondos.* |
+| 🌈 Canales RGB |
+| :---: 
+| <img width="345" height="165" alt="image" src="https://github.com/user-attachments/assets/affdd79c-afa0-417b-862e-f98509c110a1" />
+| *Mira cómo brillan los mensajes no leídos.* |
 
 </div>
 
